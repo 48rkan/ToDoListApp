@@ -43,7 +43,7 @@ class ListView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        showAlert(title: "Enter ", message: "", actionButtonTitle: "OK", cancelButtonTitle: "CANCEL", placeholder: "ALMA") { text in
+        showAlert(title: "Enter ", message: "", actionButtonTitle: "OK", cancelButtonTitle: "CANCEL", placeholder: "") { text in
             
             self.viewModel.changeData(index: indexPath.row, message: text)
             self.updating()
